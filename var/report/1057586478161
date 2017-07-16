@@ -1,0 +1,22 @@
+a:5:{i:0;s:87:"Invalid method Mage_Page_Block_Html_Wrapper::componentDisabled(Array
+(
+    [0] => 1
+)
+)";i:1;s:2379:"#0 [internal function]: Varien_Object->__call('componentDisabl...', Array)
+#1 [internal function]: Mage_Page_Block_Html_Wrapper->componentDisabled('1')
+#2 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Model/Layout.php(348): call_user_func_array(Array, Array)
+#3 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Model/Layout.php(214): Mage_Core_Model_Layout->_generateAction(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#4 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Model/Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#5 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Model/Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Model/Layout.php(206): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#8 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#9 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#10 /home/pangea1/public_html/magento/app/code/core/Mage/Checkout/controllers/OnepageController.php(212): Mage_Core_Controller_Varien_Action->loadLayout()
+#11 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Checkout_OnepageController->indexAction()
+#12 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('index')
+#13 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /home/pangea1/public_html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /home/pangea1/public_html/magento/index.php(83): Mage::run('mayabath', 'store')
+#17 {main}";s:3:"url";s:36:"/magento/index.php/checkout/onepage/";s:11:"script_name";s:18:"/magento/index.php";s:4:"skin";s:8:"mayabath";}

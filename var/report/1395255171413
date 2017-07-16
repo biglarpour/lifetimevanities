@@ -1,0 +1,10 @@
+a:5:{i:0;s:56:"The requested quantity for " Valencia" is not available.";i:1;s:1281:"#0 /home/pangea1/public_html/magento/app/code/core/Mage/Checkout/Model/Cart.php(284): Mage::throwException('The requested q...')
+#1 /home/pangea1/public_html/magento/app/code/local/Cmsmart/AjaxCart/controllers/IndexController.php(154): Mage_Checkout_Model_Cart->addProduct('15', Array)
+#2 /home/pangea1/public_html/magento/app/code/local/Cmsmart/AjaxCart/controllers/IndexController.php(67): Cmsmart_AjaxCart_IndexController->tryaddAction(Object(Mage_Catalog_Model_Product), Array)
+#3 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Cmsmart_AjaxCart_IndexController->indexAction()
+#4 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('index')
+#5 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#6 /home/pangea1/public_html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#7 /home/pangea1/public_html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#8 /home/pangea1/public_html/magento/index.php(83): Mage::run('mayabath', 'store')
+#9 {main}";s:3:"url";s:163:"/magento/index.php/ajaxcart/index/index/?form_key=1aNAL4MtPhH02h9f&product=15&related_product=&super_attribute%5B92%5D=7&super_attribute%5B142%5D=9&_=1481162540969";s:11:"script_name";s:18:"/magento/index.php";s:4:"skin";s:8:"mayabath";}

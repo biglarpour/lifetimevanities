@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<checkout_cart_add_product_complete>
+    <observers>
+        <mayabath_cartbypass_observer>
+            <type>singleton</type>
+            <class>Mayabath_Cart_Model_Observer</class>
+            <method>afterAddToCart</method>
+        </mayabath_cartbypass_observer>
+    </observers>
+</checkout_cart_add_product_complete>

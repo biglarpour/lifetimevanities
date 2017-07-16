@@ -1,0 +1,84 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+    $_productCollection=$this->getLoadedProductCollection();
+    $_helper = $this->helper('catalog/output');
+?>
+<?php if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
+<?php
+    $_collectionSize = $_products->getSize();
+
+		$_sliderOnOf = "grid-clol-6";
+		$_itemwidth = "col-item3";
+?>
+
+<div class="home-id <?php echo $_homeIndent;?>">
+    <div class="main-page-title main-category-title center">
+            <h1><?php echo $this->__('Best Selling Products') ?></h1>
+    </div>
+	<hr>
+    <?php $_columnCount = $this->getColumnCount(); ?>
+        <?php $i=0; foreach ($_products->getItems() as $_product): ?>
+            <?php if ($i++%$_columnCount==0): ?>
+	   <div class="max-wrapper">
+		    <ul class="products-grid new_triger <?php echo $_sliderOnOf;?>">
+		    <?php endif ?>
+			<?php	if(($i)<=6): ?>
+				<li class="item <?php echo $_itemwidth; ?> <?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>" itemscope itemtype="http://schema.org/product">
+					<div class="wrapper-hover">
+					<a  href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image noSwipe" itemprop="url"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(500,500); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" itemprop="image"/></a>
+					<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>" itemprop="name">
+						<div class="product-shop">
+							<h3 class="product-name">
+								<?php $small_getName = strip_tags($this->htmlEscape($_product->getName()));
+								 if (strlen($small_getName) < 20) echo($small_getName);
+								 else { echo mb_substr($small_getName, 0, 20,'UTF-8').'...';} ?>
+								<span style="margin:0 3px;">	-</span>
+								<?php $finalPrice = $_product->getFinalPrice();?>
+								<?php  $formattedPrice = Mage::helper('core')->currency($finalPrice, true, false); echo str_replace(".00", "", $formattedPrice); ?>
+							</h3>
+						</div>
+					</a>
+					<?php $_product = Mage::getModel('catalog/product')->load($_product->getId()); ?>
+					<div class="label-product">
+						<?php if($_product->getData('new')){echo '<span class="new">'.$this->__('New').'</span>';  }?>
+						<?php if($_product->getData('sale')){echo '<span class="sale">'.$this->__('Sale').'</span>';  }?>
+					</div>
+					<div class="clear"></div>
+					</div>
+				</li>
+			<?php endif ?>
+		    <?php if ($i%$_columnCount==0 || $i==count($_products)): ?>
+		    </ul>
+	    </div>
+            <?php echo "$_slidControl"; ?>
+            <?php endif ?>
+        <?php endforeach; ?>
+        <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
+    <?php endif; ?>
+</div>
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('video_block')->toHtml() ?>
