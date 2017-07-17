@@ -2564,6 +2564,7 @@ body.ps-static .wrapper-hover:hover .product-image {
 .sp-methods .form-list { padding-left:20px; }
 .sp-methods select.month { width:100px; margin-right:10px; }
 #payment_form_ccsave  #ccsave_cc_type {width: 333px;}
+#payment_form_authorizenet  #authorizenet_cc_type {width: 333px;}
 .sp-methods select.year { width:96px; }
 .sp-methods input.cvv { width:4em !important; }
 
@@ -4742,8 +4743,26 @@ span[id^="select_label_"], span[id*=" select_label_"] {
     margin-left: 20px;
 }
 
+#authorizenet_expiration {
+    width: 200px;
+}
+
+#authorizenet_expiration_yr {
+    width: 172px;
+}
+
 #payment_form_ccsave .input-box {
     width: 100%;
+}
+
+#payment_form_authorizenet .input-box {
+    width: 100%;
+    text-align: left;
+}
+
+
+#checkout-step-payment {
+    margin-top:25px;
 }
 
 #checkout-review-load {
@@ -4785,7 +4804,7 @@ span[id^="select_label_"], span[id*=" select_label_"] {
 #payment-buttons-container {
     position: absolute;
     right: -307px;
-    bottom: 28px;
+    bottom: 14px;
 }
 
 #review-buttons-container {
@@ -4807,7 +4826,7 @@ span[id^="select_label_"], span[id*=" select_label_"] {
 
 .checkout-review-top div {
     display: inline-block;
-    width: 33%;
+    width: 32%;
     vertical-align: top;
 }
 
@@ -4832,6 +4851,9 @@ span[id^="select_label_"], span[id*=" select_label_"] {
     width: 100%;
 }
 
+#checkout-step-review{
+    margin-top:25px;
+}
 
 .product-img-box .product-thumbs {
   display: none;

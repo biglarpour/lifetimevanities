@@ -85,7 +85,7 @@
 .grid-full > li > a .thumbnail {display: none;}
 #nav li a span {letter-spacing: 1px;
                 font-weight: normal;
-                font-size: 19px;
+                font-size: 18px;
                 text-transform: uppercase;}
 .grid-full > li > a:before,
 .grid-full > li > a:after {
