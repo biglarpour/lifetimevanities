@@ -2995,7 +2995,6 @@ body div.shadow.active-form {height: 100%; width: 100%;}
 .swipe-menu ul li a:before,
 .home-link:before {font-size: 26px; margin-right: 12px;}
 
-.home-link:before {content: "\f015";}
 .swipe-menu .links li:nth-child(1) a:before  { content: "\f0f0";}
 .swipe-menu .links li:nth-child(2) a:before  { content: "\f005";}
 .swipe-menu .links li:nth-child(3) a:before  { content: "\f07a";}

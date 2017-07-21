@@ -986,17 +986,13 @@
     .col-left-1 p {margin-bottom: 15px;}
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
    .nav-container {display: none;}
-   .nav-container-mobile {
-    display: block; 
-    margin-left: -16px;
-     margin-right: -16px; 
-     padding-left: 16px; 
-     padding-right: 16px; 
-     width: auto;
-     border-bottom: 6px solid #000;
-   }
+   .logo-container {display:none;}
+   .header-links {width: 100%;padding:0;}
+   .header-links li {float: none;}
+   .header-links li span:before {font-size: 26px; margin-right: 12px;}
+   .header-links li span {border-bottom: 1px solid #232323;}
 }
 
 

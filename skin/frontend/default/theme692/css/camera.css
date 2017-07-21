@@ -1070,7 +1070,7 @@
 
 
 
-.fluid_container_wrap { overflow: hidden; }
+.fluid_container_wrap { overflow: hidden;}
 .camera_wrap {margin-bottom: 0 !important;}
 .camera_caption {}
 .camera_caption a:hover {background: #3498db; border-color: #000;}
@@ -1193,8 +1193,9 @@
 @media only screen and (max-width: 991px) {
     .top_camera_info {display:none;}
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
 	.camera_caption > div {display: none;}
+	.fluid_container_wrap {margin-top: 50px;}
 }
 @media only screen and (max-width: 380px) {
 	.lof_camera_title {font-size: 16px; line-height: 16px;}

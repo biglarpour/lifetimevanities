@@ -233,12 +233,12 @@
 
     </Files>
 
-SetEnvIf Host www\.lifetimevanities\.com MAGE_RUN_CODE=mayabath
-SetEnvIf Host www\.lifetimevanities\.com MAGE_RUN_TYPE=store
-SetEnvIf Host ^lifetimevanities\.com MAGE_RUN_CODE=mayabath
-SetEnvIf Host ^lifetimevanities\.com MAGE_RUN_TYPE=store
+SetEnvIf Host www\.steamshowers4all\.com MAGE_RUN_CODE=mayabath
+SetEnvIf Host www\.steamshowers4all\.com MAGE_RUN_TYPE=store
+SetEnvIf Host ^steamshowers4all\.com MAGE_RUN_CODE=mayabath
+SetEnvIf Host ^steamshowers4all\.com MAGE_RUN_TYPE=store
 
-RewriteCond %{HTTP_HOST} www\.lifetimevanities\.com [NC]
+RewriteCond %{HTTP_HOST} www\.steamshowers4all\.com [NC]
 RewriteRule .* - [E=MAGE_RUN_CODE:mayabath]
-RewriteCond %{HTTP_HOST} www\.lifetimevanities\.com [NC]
+RewriteCond %{HTTP_HOST} www\.steamshowers4all\.com [NC]
 RewriteRule .* - [E=MAGE_RUN_TYPE:store]

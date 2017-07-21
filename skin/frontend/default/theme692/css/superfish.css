@@ -215,7 +215,7 @@ ul.sf-menu li li li.sfHover ul {
 
 
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
   .sf-menu,
   .sf-menu-phone {display: none;}
   /* menu icon */

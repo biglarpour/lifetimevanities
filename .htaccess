@@ -233,14 +233,14 @@
 
     </Files>
 
-SetEnvIf Host www\.lifetimevanities\.com MAGE_RUN_CODE=mayabath
-SetEnvIf Host www\.lifetimevanities\.com MAGE_RUN_TYPE=store
-SetEnvIf Host ^lifetimevanities\.com MAGE_RUN_CODE=mayabath
-SetEnvIf Host ^lifetimevanities\.com MAGE_RUN_TYPE=store
+SetEnvIf Host www\.steamshowers4all\.com MAGE_RUN_CODE=mayabath
+SetEnvIf Host www\.steamshowers4all\.com MAGE_RUN_TYPE=store
+SetEnvIf Host ^steamshowers4all\.com MAGE_RUN_CODE=mayabath
+SetEnvIf Host ^steamshowers4all\.com MAGE_RUN_TYPE=store
 
-RewriteCond %{HTTP_HOST} www\.lifetimevanities\.com [NC]
+RewriteCond %{HTTP_HOST} www\.steamshowers4all\.com [NC]
 RewriteRule .* - [E=MAGE_RUN_CODE:mayabath]
-RewriteCond %{HTTP_HOST} www\.lifetimevanities\.com [NC]
+RewriteCond %{HTTP_HOST} www\.steamshowers4all\.com [NC]
 RewriteRule .* - [E=MAGE_RUN_TYPE:store]
 ############################################
 ## uncomment these lines for CGI mode
@@ -494,6 +494,12 @@ FileETag None
 <ifModule mod_headers.c> 
     Header set Connection keep-alive 
 </ifModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
 
 ###########################################
 ## Tuning performance

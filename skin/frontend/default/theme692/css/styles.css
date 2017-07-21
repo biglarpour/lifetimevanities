@@ -3192,11 +3192,11 @@ body.ps-static .top-icon-menu > div:hover,
 .swipe {background-color: #fff;}
 .swipe {
     display: block;
-    left: -237px;
+    left: -300px;
     overflow: hidden;
     position: fixed;
     top: 50px;
-    width: 237px;
+    width: 300px;
     z-index:2;
     font-size: 13px;
     font-weight: bold;
@@ -3214,7 +3214,7 @@ body.ps-static .top-icon-menu > div:hover,
 body.ind .swipe { left: 0; }
 .swipe-menu {
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
     border-top: 1px solid #232323;
     -webkit-overflow-scrolling: touch;
 }
@@ -3238,30 +3238,36 @@ body div.shadow.active-form {height: 100%; width: 100%;}
 .swipe-menu .switch-show { cursor: pointer;}
 .swipe-menu .switch-show.active{border: 0;}
 .swipe-menu .switch-show > div:after {content: "\f107"; font-size: 21px; vertical-align: middle; float: right;}
-.swipe-menu a {color:#fff; }
+.swipe-menu a {color:#000; }
 .swipe-menu .links li,
 .footer-links-menu li {padding:0; display: block; }
 .swipe-menu .links li.top-car {display: none;}
 .swipe-menu .links li a,
 .footer-links-menu li a,
-.home-link {
-    color: #FFFFFF;
+.home-link,
+.swipe-register,
+.swipe-login{
+    color: #000;
     display: block;
-    font-size: 13px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 26px;
-    padding: 10px 20px 11px;
     position: relative;
+    font-size: 15px;
+    font-family: 'brandongrotesque-lightbook', sans-serif;
+    padding: 24px 15px;
 }
 .swipe-menu .links li a,
 .footer-links-menu li a,
 .home-link,
-.swipe-menu .switch-show {border-bottom: 1px solid #232323;}
+.swipe-register,
+.swipe-login,
+.swipe-menu .switch-show {border-bottom: 1px solid #232323; text-transform: uppercase;}
 
 .swipe-menu ul li a:before,
-.home-link:before {font-size: 26px; margin-right: 12px;}
+.home-link:before,
+.swipe-register:before,
+.swipe-login:before {font-size: 26px; margin-right: 12px;}
 
-.home-link:before {content: "\f015";}
 .swipe-menu .links li:nth-child(1) a:before  { content: "\f0f0";}
 .swipe-menu .links li:nth-child(2) a:before  { content: "\f005";}
 .swipe-menu .links li:nth-child(3) a:before  { content: "\f07a";}
@@ -3308,7 +3314,9 @@ body div.shadow.active-form {height: 100%; width: 100%;}
 .swipe-menu .currency-switch ul li a {padding: 14px; display: inline-block; text-transform: uppercase; font-weight: bold;}
 .swipe-menu ul a.selected {color: #ccc;}
 .swipe-menu ul li a:hover,
-.home-link:hover {background-color: #444444;}
+.swipe-register:hover,
+.swipe-login:hover,
+.home-link:hover {background-color: #3498db;}
 
 #at3win #at3winheader h3 {text-align:left !important;}
 /* ==================================back-top ================================================== */
@@ -4965,4 +4973,13 @@ img.desaturate{
     width: 25%;
     float: none;
     display: inline-block;
+}
+
+@media only screen and (max-width: 489px) {
+    .mobile-logo-container .logo {
+        width: 40%;
+    }
+    .main-page-title h1 {
+        font-size: 20px;
+    }
 }

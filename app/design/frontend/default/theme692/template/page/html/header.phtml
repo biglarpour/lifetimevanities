@@ -32,16 +32,11 @@
 <div class="swipe">
     <div class="swipe-menu">
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->__('Home') ?>" class="home-link"><?php echo $this->__('Home') ?></a>
-        <?php echo $this->getChildHtml('topLinks') ?>
         <?php echo $this->getChildHtml('currency_2') ?>
         <?php echo $this->getChildHtml('store_language_2') ?>
-        <?php echo $this->getChildHtml('footer_links') ?>
-        <?php echo $this->getChildHtml('cms_footer_links') ?>
-        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('cms_footer_links')->toHtml() ?>   
-        <div class="footer-links-menu"> 
-            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_links')->toHtml() ?>  
-            <?php echo $this->getLayout()->createBlock('core/template')->setTemplate('page/template/custum_link_header.phtml')->toHtml(); ?>
-        </div>
+        <?php echo $this->getChildHtml('topMenu') ?>
+        <a class="swipe-login" href="<?php echo Mage::getUrl('customer/account/login'); ?>" title="Login" onclick="return false;">Login</a>
+        <a class="swipe-register" href="<?php echo Mage::getUrl('customer/account/create'); ?>" title="Register">Register</a>
     </div>
 </div>
 <?php
