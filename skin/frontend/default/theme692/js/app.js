@@ -1013,7 +1013,7 @@ $j(document).ready(function () {
     // ==============================================
 
     if ($j('body.checkout-onepage-index').length) {
-        enquire.register('(max-width: ' + bp.large + 'px)', {
+        enquire.register('(max-width: 300px)', {
             match: function () {
                 $j('#checkout-step-review').prepend($j('#checkout-progress-wrapper'));
             },

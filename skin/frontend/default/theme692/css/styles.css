@@ -379,7 +379,7 @@ button.button > span,
 	font-family:"museo_sans100",sans-serif;
 	background:#3498DB none repeat scroll 0px 0px;
 	color:#fff;
-	font-size:14px;
+	font-size:15px;
 	line-height:19px;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -4601,12 +4601,12 @@ span[id^="select_label_"], span[id*=" select_label_"] {
 .checkout-onepage-index label[for="billing:fax"]  {
     display: none;
 }
-.checkout-onepage-index input[id="billing:street1"] {
-    width: 742px !important;
+.opc .form-list li.wide input[id="billing:street1"] {
+    width: 742px;
 }
 
 .checkout-onepage-index input[id="billing:email"] {
-    width: 373px !important;
+    width: 373px;
 }
 .checkout-onepage-index button.button span span {
     padding: 8px 100px;

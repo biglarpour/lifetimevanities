@@ -99,6 +99,7 @@
 @media only screen and (max-width: 768px) {
 	.top-icon-menu {display: block;position:fixed;border-bottom: solid 1px;}
 	.header-container {display: none;}
+	.call-us, .hours {display:list-item;text-align: center;}
 }
 
 
@@ -121,7 +122,7 @@
 	.cart .discount-form .input-box input { width:198px; }
 	.form-list .input-box {width:225px;}
 	.cart .shipping .form-list li select option {width:174px;}
-	.cart .totals button.button > span { font-size:14px; }
+	.cart .totals button.button > span { font-size:15px; }
 	.cart .totals table th,
 	.cart .totals table td { font-size:11px; padding: 15px 10px; }
 	.cart .totals table td+td { padding: 15px 10px; }
@@ -137,7 +138,7 @@
 	.page-title h2 { word-wrap:break-word;}
 	.page-title h1, .page-title h2 {font-size: 30px;}
 
-	button.button > span, .page-sitemap .links a {font-size: 10px;}
+	button.button > span, .page-sitemap .links a {font-size: 15px;}
 	button.button span span {}
 	button.btn-row > span {font-size: 18px;}
 	
@@ -196,7 +197,7 @@
 	.opc .form-list .customer-name-middlename-suffix .name-firstname input.input-text,
 	.opc .form-list .customer-name-middlename-suffix .name-lastname input.input-text {width:93px;}
 	.cart-collaterals .col2-set .col-1 {margin-right:15px;}
-	.cart .totals button.button > span { font-size: 12px; }
+	.cart .totals button.button > span { font-size: 15px; }
 	.cart > form {overflow-x:auto; display: block;}
 
 	.cart .crosssell .product-image,
@@ -295,7 +296,12 @@
 	.header .top-search,
 	.header .welcome-msg {display: none;}
 	.header .header-row-bg {padding: 20px 10px;}
-	.padding-s {padding:0 10px; }
+	.product-essential {padding:0 10px; }
+	.checkout-onepage-index .padding-s {padding:0 10px; }
+	#checkoutSteps li,#checkoutSteps .input-box,
+	#billing-new-address-form > fieldset:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(2) > div:nth-child(2),
+	#billing-new-address-form > fieldset:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(2) > div:nth-child(2) {width: 100%;}
+	#product_description_extras h3 {font-size:18px;}
 	.order-buttons {display:none !important;}
 	.title-buttons h1,
 	.title-buttons h2,
@@ -481,7 +487,7 @@
  	.cart .data-table tfoot {position: absolute; bottom: 0; left: 0;}
  	.cart .data-table tfoot button.button {margin: 3px 0;}
 
- 	.data-table button.button > span {font-size: 12px;}
+ 	.data-table button.button > span {font-size: 15px;}
 
  	.cart .data-table {padding-bottom: 200px;}
 	.cart .data-table tfoot button.button {width: 100%;}
@@ -584,7 +590,9 @@
 
     .opc #checkout-review-table td {padding:7px;}
 	.opc #checkout-review-table tfoot td {padding:7px;}
-	#checkout-progress-wrapper {display:none;}
+	#checkout-progress-wrapper {display:block;}
+	#co-billing-form #billing-buttons-container {position: inherit;display: inline-block;float:none;}
+	button.button > span {font-size:15px;}
 	#multiship-addresses-table.data-table td {padding:5px;}
 	#multiship-addresses-table select {width:80px;}
 	
@@ -723,7 +731,7 @@
 @media only screen and (max-width: 600px) {
 	.footer .footer-col .tel {font-size: 22px;}
 	button.button > span, .page-sitemap .links a,
-	.add-to-cart button.button > span {font-size: 12px;}
+	.add-to-cart button.button > span {font-size: 15px;}
 	.products-grid button.btn-cart > span {font-size: 13px; line-height: 20px;}
 	.products-grid button.btn-cart span span:before {font-size: 18px; margin-right: 8px;}
 	.homeIndent .category-title {padding-right: 85px;}
@@ -737,7 +745,7 @@
 	.product-view .box-collateral-content,
 	#review-form {overflow: auto; padding-bottom: 20px; -webkit-overflow-scrolling: touch;}
 	.page-sitemap .links {margin: 0;}
-	.cart .totals button.button > span { font-size: 12px; }
+	.cart .totals button.button > span { font-size: 15px; }
 	.box-up-sell .caroufredsel_wrapper { min-height: 320px;}
 	.block-cart-header .cart-content {left: -120px;}
 	.block-cart-header {border: 0;}
@@ -772,7 +780,7 @@
 	.container-slider li {width: 90px;}
 	.container-slider li {margin-right: 2px;}
 	.top-icon-menu {min-width: 320px;}
-	button.button > span, .page-sitemap .links a{font-size: 12px; text-transform: none;}
+	button.button > span, .page-sitemap .links a{font-size: 15px;}
 	.products-grid button.btn-cart > span span:before {display: none;}
 	.product-options,
 	.product-view .product-options-bottom {padding: 10px;}	
