@@ -37,7 +37,8 @@ Default layout, loads most of the pages
             <block type="page/html_head" name="head" as="head">
 
                 <!-- <action method="addJs"><script>jquery/jquery-1.11.1.min.js</script></action> -->
-                <action method="addJs"><script>jquery/jquery-1.11.1.min.js</script></action>
+                <action method="addJs"><script>jquery/jquery-3.2.1.min.js</script></action>
+                <action method="addItem"><type>skin_js</type><name>js/jquery-3.2.1.min.js</name><params/></action>
                 <action method="addJs"><script>jquery/jquery-migrate-1.2.1.min.js</script></action>
                 <action method="addJs"><script>lib/jquery/noconflict.js</script></action>
 
@@ -55,15 +56,15 @@ Default layout, loads most of the pages
                 <action method="addJs"><script>varien/js.js</script></action>
                 <action method="addJs"><script>varien/form.js</script></action>
                 <action method="addJs"><script>mage/translate.js</script></action>
-                <action method="addJs"><script>mage/cookies.js</script></action>		
-                
+                <action method="addJs"><script>mage/cookies.js</script></action>
+
                 <action method="addItem"><type>skin_js</type><name>js/jquery.easing.1.3.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/jquery.mobile.customized.min.js</name><params/></action>
 
-				<action method="addItem"><type>skin_js</type><name>js/bootstrap.js</name><params/></action>
+                <action method="addItem"><type>skin_js</type><name>js/bootstrap.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/jquery.carouFredSel-6.2.1.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/jquery.touchSwipe.js</name><params/></action>
-               
+
                 <action method="addItem"><type>skin_js</type><name>js/jquery.bxslider.min.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/jquery.unveil.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/device.min.js</name><params/></action>
@@ -74,6 +75,7 @@ Default layout, loads most of the pages
                 <action method="addItem"><type>skin_js</type><name>js/jquery.scrollmagic.min.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/camera.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/owl.carousel.js</name><params/></action>
+                <action method="addItem"><type>skin_js</type><name>js/jquery.fancybox.min.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/smoothing-scroll.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/superfish.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/scripts.js</name><params/></action>
@@ -95,6 +97,7 @@ Default layout, loads most of the pages
                 <action method="addCss"><stylesheet>css/camera.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/owl.carousel.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/owl.theme.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/jquery.fancybox.min.css</stylesheet></action>
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
 				<action method="addCss"><stylesheet>css/superfish.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>

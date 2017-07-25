@@ -133,6 +133,9 @@ Checkout.prototype = {
         if(!reloadProgressBlock) {
             this.resetPreviousSteps();
         }
+        var targetOffset = jQuery("#opc-"+section).offset().top
+            - jQuery('#header').height() - 60;
+        jQuery("html, body").delay(10).animate({scrollTop: targetOffset}, 60);
     },
 
     resetPreviousSteps: function () {

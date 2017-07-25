@@ -297,11 +297,19 @@
 	.header .welcome-msg {display: none;}
 	.header .header-row-bg {padding: 20px 10px;}
 	.product-essential {padding:0 10px; }
-	.checkout-onepage-index .padding-s {padding:0 10px; }
+	.checkout-onepage-index .padding-s,
+	.catalog-category-view .padding-s {padding:0 10px; }
 	#checkoutSteps li,#checkoutSteps .input-box,
 	#billing-new-address-form > fieldset:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(2) > div:nth-child(2),
-	#billing-new-address-form > fieldset:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(2) > div:nth-child(2) {width: 100%;}
+	#billing-new-address-form > fieldset:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(2) > div:nth-child(2) {width: 100%; max-width:100%;}
 	#product_description_extras h3 {font-size:18px;}
+	#authorizenet_cc_type_exp_div .v-fix,
+	#authorizenet_expiration,
+	#authorizenet_expiration_yr {width: 100%}
+	.checkout-review-top .checkout-review-payment-info,
+	.checkout-review-top .checkout-review-billing-address,
+	.checkout-review-top .checkout-review-shipping-address {width: 100%;border-top: solid 1px;padding: 10px 0;}
+	div#checkout-review-table-wrapper {padding: 10px 0;border-top: 1px solid;}
 	.order-buttons {display:none !important;}
 	.title-buttons h1,
 	.title-buttons h2,
@@ -564,7 +572,7 @@
 	.opc .form-list li.wide input.input-text,
 	.form-list input.input-text,
 	.form-list li.wide input.input-text,
-	.opc .fields select, .opc .field select {width:100%;}
+	.opc .fields select, .opc .field select {width:100%;max-width:100%;}
 	.opc .form-list .customer-name-suffix .name-lastname,
 	.opc .form-list .customer-name-middlename .name-firstname,
 	.opc .form-list .customer-name-middlename-suffix .name-firstname,
@@ -591,7 +599,10 @@
     .opc #checkout-review-table td {padding:7px;}
 	.opc #checkout-review-table tfoot td {padding:7px;}
 	#checkout-progress-wrapper {display:block;}
-	#co-billing-form #billing-buttons-container {position: inherit;display: inline-block;float:none;}
+	#co-billing-form #billing-buttons-container,
+	#payment-buttons-container,
+	#review-buttons-container{position: inherit;display: inline-block;float:none;right:0; bottom:0}
+	div#checkout-review-submit {text-align: center;}
 	button.button > span {font-size:15px;}
 	#multiship-addresses-table.data-table td {padding:5px;}
 	#multiship-addresses-table select {width:80px;}
@@ -647,9 +658,7 @@
 	.toolbar .sorter,
 	.cart .crosssell .add-to-links li+li,
 	.my-account .data-table thead,
-	.opc #checkout-review-table thead,
 	.opc #checkout-review-table colgroup,
-	.opc #checkout-review-table .item-options,
 	.footer .footer-col-content {display:none;}
 
 	.footer-container {}
